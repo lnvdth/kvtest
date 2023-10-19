@@ -1,0 +1,6 @@
+git init
+git add .
+git commit -m "first committ"
+git remote add origin https://github.com/lnvdth/kvtest.git
+git branch -M main
+git push -u origin main
