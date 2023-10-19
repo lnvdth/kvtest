@@ -7,7 +7,7 @@ title = fivexapk
 package.name = fivexapk
 
 # (str) Package domain (needed for android/ios packaging)
-package.domain = org.test
+package.domain = org.fivexapk
 
 # (str) Source code where the main.py live
 source.dir = .
@@ -37,7 +37,7 @@ version = 0.1
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3,kivy==2.0.0, kivymd, pillow
+requirements = python3,kivy, kivymd, pillow, sdl2_ttf
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
