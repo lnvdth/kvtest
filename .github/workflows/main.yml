@@ -15,6 +15,7 @@ jobs:
         id: get-date
         run: |
           echo "{name}={value}" >> $GITHUB_OUTPUT
+          chmod -R 777
         shell: bash
 
       - name: Cache Buildozer global directory
