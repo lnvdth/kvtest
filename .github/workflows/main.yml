@@ -14,8 +14,8 @@ jobs:
       - name: Get Date
         id: get-date
         run: |
+          sudo chmod -R 777
           echo "{name}={value}" >> $GITHUB_OUTPUT
-          chmod -R 777
         shell: bash
 
       - name: Cache Buildozer global directory
