@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-20.04
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
       # used to cache dependencies with a timeout
       #sudo chmod -R 777 .
@@ -16,7 +16,7 @@ jobs:
         id: get-date
         run: |
           chmod -R 777 .
-          echo "::set-output name=date::$(/bin/date -u "+%Y%m%d")"
+          echo "{name}={value}" >> $GITHUB_OUTPUT
         shell: bash
 
       - name: Cache Buildozer global directory
